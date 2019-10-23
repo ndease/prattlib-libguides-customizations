@@ -1,0 +1,77 @@
+<script>
+window.onload=newBg;
+
+function newBg(){
+document.getElementById("custom-header").className = "header" + Math.floor(Math.random() * 6);;
+}
+</script>
+<a href="#search" class="hide">Skip to library search</a>
+
+<header id="custom-header">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom navbar-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="https://library.pratt.edu">
+      <img class="logo-style" src="https://libapps.s3.amazonaws.com/accounts/151514/images/PIL_Logo_White_Transparent.png" alt="Library Brand"></a>
+        </div>
+        <div id="navbar" class= "navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-main">
+            <li class="nav-item"><a class="nav-link" href="https://library.pratt.edu/services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://library.pratt.edu/collections">Collections</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://library.pratt.edu/faculty">Faculty Support</a></li>
+            <li class="nav-item"><a class="nav-link " href="https://pratt.libanswers.com">Help</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a href="https://library.pratt.edu/libraries">The Libraries</a></li>
+                <li class="nav-item"><a href="https://library.pratt.edu/policies">Policies</a></li>
+                <li class="nav-item"><a href="https://library.pratt.edu/contact">Contact</a></li>
+                <li class="nav-item"><a href="https://library.pratt.edu/staff">Staff Directory</a></li>
+                <li class="nav-item"><a href="https://pratt.libcal.com/hours">Library Hours</a></li>
+                <li class="nav-item"><a href="https://pratt.libcal.com">Exhibits & Events</a></li>
+              </ul>
+            </li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://cat.pratt.edu/patroninfo~S0" target="_blank">
+    <i class="fa fa-user-circle fa-lg icon-button" aria-label="My Account"></i><span class="hide">My Account</span></a>
+        </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+            <div class="logo">
+          <a target="_blank" href="https://www.pratt.edu/" class="text-nowrap" title="Pratt Institute Home">Pratt Institute</a>
+          </div>
+          </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+      <div class="search-box" id="search">
+        <script type="text/javascript" src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js"></script>
+        <form action="" method="post" onsubmit="return ebscoHostSearchGo(this);">
+        <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="0" />
+        <input id="ebscohosturl" type="hidden" name="ebscohosturl" value="https://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;type=0&amp;site=eds-live&amp;custid=s8440772&amp;groupid=main&amp;profid=eds&amp;lang=en&amp;authtype=cookie,ip,guest" />
+        <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db" />
+        <input id="ebscohostsearchmode" type="hidden" name="ebscohostsearchmode" value="+" />
+        <input id="ebscohostkeywords" type="hidden" name="ebscohostkeywords" value="" />
+        <div class="input-group input-group-lg">
+         <input id="ebscohostsearchtext" name="ebscohostsearchtext" class="form-control py=2 shadow search-bar" placeholder="Find books, articles, guides & more" aria-label="Search through library collections" type="text" />
+         <span class="input-group-addon">
+         <button type="submit" aria-label="Library Search" value="search" class="btn btn-outline-secondary border-0 search-button"><i class="fa fa-search"></i>
+         </button>
+        </span>
+        </div>
+        </form>
+      </div>
+
+      </div>
+    </div>
+</header>
