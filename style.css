@@ -323,7 +323,7 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
 ul.footer-links{
-list-style: none !important;
+list-style: none !important; 
 list-style-type: none !important;
 list-style-position:outside !important;
 margin-left:0px;
@@ -1307,7 +1307,7 @@ border: 1px solid #ccc !important;
 }
 
  .dropdown-menu {
-background-color: #fff !important;
+background-color: #fff !important; 
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -1333,4 +1333,88 @@ margin-top: 1rem;
       color: #0C77D4!important;
       text-decoration:none !important;
 }
+
+#iron-blog-desc{
+font-family: "ApercuRegular", Arial, sans-serif;
+    font-size: .8em;
+}
+
+li #iron-blog-desc{
+display:none;
+}
+
+h2.s-lg-blog-header {
+    font-size: 3rem !important;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+    font-weight: normal !important;
+   
+
+}
+h2.s-lg-blog-header  a {
+color:#212529; !important;
+ letter-spacing: .09em !important;
+}
+h2.s-lg-blog-header  a:hover{
+color: #0C77D4!important;
+text-decoration:none !important;
+}
+
+#s-lib-public-header-title{
+    margin-top: 30px;
+text-align:center;
+letter-spacing: 0.09em;
+    text-transform: uppercase;
+    line-height: 1.2;
+font-size: 4.3rem;
+font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-weight: normal !important;
+
+}
+
+div#s-lg-blog-content img{
+max-width: 100% !important;
+height: auto !important;
+margin: 0 auto !important;
+}
+
+#s-lib-public-nav{
+padding:0px!important;}
+
+button#s-lg-blog-search-submit {
+    border: 1px solid black !important;
+    text-align: center !important;
+    padding-right: 20px;
+}
+
+button#s-lg-blog-search-submit:hover{
+color: #fff;
+    background-color: #0069d9;
+}
+
+.s-lg-blog-search button, .s-lg-blog-search input {
+    height: 28px;
+    border-color: black !important;
+}
+
+input#s-lg-blog-ml-email {
+    border-color: black !important;
+}
+
+button#s-lg-submit {
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+}
+
+button#s-lg-submit:hover{
+color: #fff;
+    background-color: #0069d9;
+} 
 </style>
+
+<script>
+$(document).ready(function() {
+    $("#s-lib-public-header-title").after("<hr>");
+});
+</script>
