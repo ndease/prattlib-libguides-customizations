@@ -1395,11 +1395,11 @@ color: #fff;
 
 .s-lg-blog-search button, .s-lg-blog-search input {
     height: 28px;
-    border-color: black !important;
+    border-color: lightgray !important;
 }
 
 input#s-lg-blog-ml-email {
-    border-color: black !important;
+    border-color: lightgray !important;
 }
 
 button#s-lg-submit {
