@@ -1333,4 +1333,9 @@ margin-top: 1rem;
       color: #0C77D4!important;
       text-decoration:none !important;
 }
+
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: .5em 1em !important;
+    text-decoration: none;
 </style>
