@@ -323,7 +323,7 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
 ul.footer-links{
-list-style: none !important; 
+list-style: none !important;
 list-style-type: none !important;
 list-style-position:outside !important;
 margin-left:0px;
@@ -1307,7 +1307,7 @@ border: 1px solid #ccc !important;
 }
 
  .dropdown-menu {
-background-color: #fff !important; 
+background-color: #fff !important;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -1334,12 +1334,6 @@ margin-top: 1rem;
       text-decoration:none !important;
 }
 
-<<<<<<< HEAD
-.ui-tabs .ui-tabs-nav li a {
-    float: left;
-    padding: .5em 1em !important;
-    text-decoration: none;
-=======
 #iron-blog-desc{
 font-family: "ApercuRegular", Arial, sans-serif;
     font-size: .8em;
@@ -1355,7 +1349,7 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
     margin-top: 5px !important;
     margin-bottom: 0px !important;
     font-weight: normal !important;
-   
+
 
 }
 h2.s-lg-blog-header  a {
@@ -1416,8 +1410,22 @@ button#s-lg-submit {
 button#s-lg-submit:hover{
 color: #fff;
     background-color: #0069d9;
-} 
->>>>>>> f95c662e004455d065b7da632142d31ad1d8efe6
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: .5em 1em !important;
+    text-decoration: none;
+}
+
+.alert {
+    background-color: rgb(249, 66, 58);
+    color: white;
+    border-width: 2px;
+    font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
+    font-size: 16px;
+    margin: 10px;
+}
 </style>
 
 <script>
