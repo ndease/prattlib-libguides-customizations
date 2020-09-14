@@ -571,7 +571,7 @@ border-color: black;
                             -webkit-border-radius: 0;
                             -moz-border-radius: 0;
                             border-radius: 0;
-                            background-color: #0090d0;
+                            background-color: #0C77D4;
                             color: #ffffff;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > a,
@@ -580,7 +580,7 @@ border-color: black;
                         #s-lg-tabs-container .nav-pills > .active > button {
                             color: #ffffff;
                             cursor: default;
-                            background-color: #0090d0;
+                            background-color: #0C77D4;
 
                             border: 1px solid;
 border-color:black;
@@ -594,7 +594,7 @@ border-color:black;
                         #s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > button {
                             color: #ffffff;
                             cursor: default;
-                            background-color: #0090d0;
+                            background-color: #0C77D4;
                             border-bottom-color: transparent;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > a:hover,
@@ -603,7 +603,7 @@ border-color:black;
                         #s-lg-tabs-container .nav-pills > .active > button:hover {
                             color: #ffffff;
                             cursor: pointer;
-                            background-color: #0090d0;
+                            background-color: #0C77D4;
 
                             border: 1px solid transparent;
                             -webkit-border-radius: 0;
@@ -1082,7 +1082,7 @@ a {
   border-width:1px !important;
   border-color:black !important;
   border-radius:0px !important;
-  background-color:#0090D0 !important;
+  background-color:#0C77D4 !important;
   color: white !important;
   font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 
@@ -1163,7 +1163,7 @@ padding:15px;
 }
 .dropdown-menu>li>a:hover {
     color: white !important;
-    background-color: #0090D0 !important;
+    background-color: #0C77D4 !important;
 }
 
 #s-lib-scroll-top{
@@ -1485,7 +1485,7 @@ width:100%;
 }
 
 .s-lib-profile-widget > button:hover {
-         background-color: #0090d0 !important;
+         background-color: #0C77D4 !important;
            color:white !important;
 }
 </style>
