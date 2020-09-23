@@ -169,76 +169,97 @@
 
 
 <!-- equipment carousel template -->
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <style>
-.carousel-control{
-	width:5% !important;
-	color:black;
+.slick-prev:before,
+.slick-next:before
+{
+    color: black !important;
 }
-.carousel-control.left{
-	background-image:none;
-	color:black;
-}
-.carousel-control.right{
-	background-image:none;
-	color:black;
+.slider > div {
+	text-align:center;
 }
 </style>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+<div class="slider equip">
+<div>
+	<a href="https://libguides.pratt.edu/equipment/Cameras">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="">
+	<h3 class="h5">Cameras</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/equipment/lighting">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50311802" alt="">
+	<h3 class="h5">Lighting</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7843754">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50312979" alt="">
+	<h3 class="h5">Photo Accs.</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845265">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=57144578" alt="">
+	<h3 class="h5">Tripods & Stands</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845290">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50416929" alt="">
+	<h3 class="h5">Projectors</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845292">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50417045" alt="">
+	<h3 class="h5">Audio Recorders</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845293">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=57146577" alt="">
+	<h3 class="h5">Speakers & Headphones</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845910">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=50431713" alt="">
+	<h3 class="h5">Microphones</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845294">
+	<img class="img-responsive" src="https://libguides.pratt.edu/ld.php?content_id=57147366" alt="">
+	<h3 class="h5">Computers & Adapters</h3></a>
+</div>
+<div>
+	<a href="https://libguides.pratt.edu/c.php?g=763489&p=7845912">
+	<img class="img-responsive" src="https://libapps.s3.amazonaws.com/accounts/211187/images/memory_card.jpg" alt="...">
+	<h3 class="h5">Memory Cards & Readers</h3></a>
+</div>
+</div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" style="text-align:center;">
-    <div class="item active">
-<div class="row">
-<div class="col-lg-3">
-      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-			<a href="#">Cameras</a>
-</div>
-<div class="col-lg-3">
-      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-			<a href="#">Cameras</a>
-</div>
-<div class="col-lg-3">
-      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-			<a href="#">Cameras</a>
-</div>
-</div>
-		</div>
-    <div class="item">
-			<div class="row">
-			<div class="col-lg-3">
-			      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-						<a href="#">Cameras</a>
-			</div>
-			<div class="col-lg-3">
-			      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-						<a href="#">Cameras</a>
-			</div>
-			<div class="col-lg-3">
-			      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-						<a href="#">Cameras</a>
-			</div>
-			<div class="col-lg-3">
-			      <img src="https://libguides.pratt.edu/ld.php?content_id=50310699" alt="..." width="100px" height="100px"><br>
-						<a href="#">Cameras</a>
-			</div>
-			</div>
-    </div>
-    ...
-  </div>
+<script>
+$(document).ready(function(){
+   $('.equip').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+	responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+	]
+});
+});
+</script>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
