@@ -438,7 +438,7 @@ body{
 .s-lib-box-title{
   font-family:"ApercuRegular", Arial, sans-serif;
 } */
-.s-lib-box-content > div > ul > li{
+.s-lib-box-content > div > ul, ol{
   font-size:1.3em;
   margin: 1.125em 0;
   line-height: 1.55em;
