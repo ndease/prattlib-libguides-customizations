@@ -161,6 +161,9 @@ font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 display: none !important;
 height:0px !important;
 }
+#s-lg-guide-tabs-title-bar {
+    padding: 0px !important;
+}
 .s-la-content-search-query{
 height:40px !important;
 }
@@ -563,17 +566,20 @@ background-color:white;
                         #s-lg-tabs-container .nav-pills > li > a,
                         #s-lg-tabs-container .nav-pills > li > button {
 
-                            border: 1px solid;
+border-top: 1px solid;
+border-bottom: none !important;
+border-right: none !important;
+border-left: none !important;
+font-family: ApercuMedium, Helvetica, Arial, sans-serif;
+font-size: 16px;
+font-weight: normal;
+padding: .2em .1em .1em .5em;
 border-color:black;
                             -webkit-border-radius: 0;
                             -moz-border-radius: 0;
                             border-radius: 0;
                             background-color: #ffffff;
                             color: #000000;
-
-font-size:13px;
-
-                            padding: 10px 20px;
                         }
                         #s-lg-tabs-container .nav-tabs {
                             border-bottom: 0;
@@ -588,51 +594,45 @@ font-size:13px;
                         #s-lg-tabs-container .nav-pills > li > a:hover,
                         #s-lg-tabs-container .nav-pills > li > button:hover {
 
-                            border: 1px solid;
-border-color: black;
+                    border-top: 1px solid #0C77D4;
                             -webkit-border-radius: 0;
                             -moz-border-radius: 0;
                             border-radius: 0;
-                            background-color: #0C77D4;
-                            color: #ffffff;
+                            background-color: transparent;
+                            color: #0C77D4;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > a,
                         #s-lg-tabs-container .nav-tabs > .active > button,
                         #s-lg-tabs-container .nav-pills > .active > a,
                         #s-lg-tabs-container .nav-pills > .active > button {
-                            color: #ffffff;
+                            color: #0C77D4;
+                            border-top: 1px solid #0C77D4;
                             cursor: default;
-                            background-color: #0C77D4;
-
-                            border: 1px solid;
-border-color:black;
+                            background-color: transparent;
                             -webkit-border-radius: 0;
                             -moz-border-radius: 0;
                             border-radius: 0;
                             border-bottom-color: transparent;
-                            font-weight: bold;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > a,
                         #s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > button {
-                            color: #ffffff;
+                            color: #0C77D4 !important;
+                            background-color:transparent !important;
                             cursor: default;
-                            background-color: #0C77D4;
                             border-bottom-color: transparent;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > a:hover,
                         #s-lg-tabs-container .nav-pills > .active > a:hover,
                         #s-lg-tabs-container .nav-tabs > .active > button:hover,
                         #s-lg-tabs-container .nav-pills > .active > button:hover {
-                            color: #ffffff;
+                            color: #0C77D4 !important;
+                            background-color:transparent !important;
                             cursor: pointer;
-                            background-color: #0C77D4;
-
                             border: 1px solid transparent;
                             -webkit-border-radius: 0;
                             -moz-border-radius: 0;
                             border-radius: 0;
                             border-bottom-color: transparent;
-                            font-weight: bold;
                         }
                         #s-lg-tabs-container .nav .dropdown-toggle .caret {
                             border-top-color: #e1e1e1;
@@ -671,8 +671,6 @@ display:none;
                         #s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link,
                         #s-lg-tabs-container .nav-tabs > li > button.s-lg-tab-top-link:hover {
                             border-radius: 0;
-                            font-weight: bold;
-                            padding: 10px 20px;
                         }
                         .nav-tabs > li > a.s-lg-tab-top-link,
                         .nav-tabs > li > button.s-lg-tab-top-link {
@@ -682,16 +680,12 @@ display:none;
                         #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-drop,
                         #s-lg-tabs-container .nav-pills > li > button.s-lg-tab-drop {
                             border-radius: 0;
-                            padding: 10px 20px;
-                            border-left: 1px solid transparent;
                             position: absolute;
                             right: 0;
                         }
                         #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-drop:hover,
                         #s-lg-tabs-container .nav-pills > li > button.s-lg-tab-drop:hover {
                             border-radius: 0;
-                            border-left: 1px solid #bbb;
-                            padding: 10px 20px;
                         }
                         #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link,
                         #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link:hover,
@@ -700,9 +694,24 @@ display:none;
                             width: 100%;
                             float: left;
                             border-radius: 0;
-                            font-weight: bold;
-                            padding: 10px 20px;
                         }
+
+                        #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link, #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link:hover, #s-lg-tabs-container .nav-pills > li > button.s-lg-tab-top-link, #s-lg-tabs-container .nav-pills > li > button.s-lg-tab-top-link:hover {
+                            font-weight: normal;
+                            padding: none;
+                        }
+
+                        #s-lg-tabs-container .nav .dropdown-toggle .caret {
+    border-top-color: black;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-tabs > .active > button, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-pills > .active > button {
+    font-weight: normal;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    outline: none;
+}
 /*
 ==================================================================
 Pratt Style
