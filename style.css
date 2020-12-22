@@ -1556,6 +1556,18 @@ a.special-btn:hover{
     text-decoration: none;
 }
 
+.s-lch-widget-float-btn{
+box-shadow:none !important;
+}
+.s-lch-widget-float.open{
+z-index:9000;
+}
+
+button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
+    cursor: pointer;
+}
+
+
 </style>
 
 <script>
