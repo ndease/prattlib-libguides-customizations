@@ -1558,6 +1558,7 @@ a.special-btn:hover{
 
 .s-lch-widget-float-btn{
 box-shadow:none !important;
+background-color:transparent;
 }
 .s-lch-widget-float.open{
 z-index:9000;
