@@ -1568,6 +1568,9 @@ button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
     cursor: pointer;
 }
 
+li > p {
+    font-size: 16px !important;
+}
 
 </style>
 
