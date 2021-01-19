@@ -1580,6 +1580,15 @@ font-family:ApercuMedium, Helvetica, Arial, sans-serif !important;
     font-weight: normal;
 }
 
+.label-info{
+background-color:#0C77D4;
+color:white;
+}
+.label-info[href]:focus, .label-info[href]:hover {
+background-color:black !important;
+color: white;
+}
+
 </style>
 
 <script>
