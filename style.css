@@ -38,7 +38,7 @@ header{
     background-size: cover;
 }
 
-@media(min-width:1130px){
+@media(min-width:1350px){
 .navbar-main{
 margin-right:10% !important;
 }
@@ -113,6 +113,7 @@ margin-left:.2em !important;
 margin-right:.2em !important;
 text-decoration: none !important;
 text-transform:none;
+white-space:nowrap;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 }
 
@@ -245,7 +246,7 @@ border-width:0px !important;
 }
 
 .fa-search{
-	font-size:1rem;
+	font-size:1.2rem;
 }
 
 
@@ -322,7 +323,7 @@ footer{
 
 .footer-links{
 text-align:left;
-font-size:1.2em !important;
+font-size:1.05rem !important;
 line-height:1.5em !important;
 font-family: "ApercuMedium", Helvetica, Arial, sans-serif !important;
 
@@ -1319,7 +1320,7 @@ color:#FFB900;
 }
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
         .navbar-header {
                 float: none;
         }
