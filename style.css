@@ -28,12 +28,13 @@ header{
     background-size: cover;
 }
 
+/*
 @media(min-width:1350px){
 .nav.navbar-nav.navbar-main{
 margin-right:10%;
 }
 }
-
+*/
 
 .navbar-brand{
 margin:0;
@@ -1223,7 +1224,7 @@ color:#FFB900;
 }
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
-@media (max-width: 1080px) {
+@media (max-width: 1126px) {
         .navbar-header {
                 float: none;
         }
