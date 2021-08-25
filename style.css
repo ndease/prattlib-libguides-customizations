@@ -1224,7 +1224,7 @@ color:#FFB900;
 }
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
-@media (max-width: 1126px) {
+@media (max-width: 1200px) {
         .navbar-header {
                 float: none;
         }
