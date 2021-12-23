@@ -1515,6 +1515,46 @@ color: #000;
 #col-vendors {
     display: none;
 }
+
+.lib-site-alert{
+  position:relative;
+  width:100%;
+  top:60px;
+  text-align: center;
+  background-color: #FFB900;
+  color:black;
+  display:none;
+}
+
+.lib-site-alert p{
+    font-family:'ApercuMedium', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.lib-site-alert i {
+  padding-top:1em;
+}
+
+.lib-site-alert p > a{
+  text-decoration: underline;
+  color:black;
+  border:none;
+  box-shadow:none;
+}
+.lib-site-alert p > a:hover {
+color: black;
+background-color: transparent;
+}
+
+#s-lg-box-27831781{
+background-color:transparent;
+margin:0;
+}
+
+.h5.lib-site-alert {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 </style>
 
 <script>
