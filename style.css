@@ -36,88 +36,93 @@ header{
   	max-height:25px;
     margin-top:-10px;
   }
-
-.navbar-brand{
-margin:0;
-padding-top:10px;
-padding:0;
-
-}
-
-.navbar .navbar-nav {
-    float: none;
-display:inline-block;
-}
-
-@media(max-width:1000px){
-.navbar .navbar-nav{
-display: block;
-}
-
-.navbar{
-padding-bottom:5px;
-}
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-#navbar .navbar-nav>li>a{
-  color:white;
-}
-#navbar .navbar-nav>li>a:hover{
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
   color: #FFB900;
 }
+  .navbar-nav{
+  	padding:0;
+  	margin:0;
+  }
 
-.navbar-nav{
-	padding:0;
-	margin:0;
+  .navbar .navbar-default .navbar-nav .nav-link {
+      letter-spacing: normal;
+  }
+
+  .navbar{
+        padding: 0.5rem 1rem;
+        background-color:black;
+        border-bottom:1px solid white;
+  }
+
+  .navbar .navbar-nav {
+      float: none;
+  display:inline-block;
+  }
+
+  @media(max-width:1005px){
+  .navbar .navbar-nav{
+  display: block;
+  }
+  .navbar{
+  padding-bottom:5px;
+  }
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+  a.nav-link{
+    font-size:1.25em;
+    font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
+  	padding-top:10px;
+  	padding-bottom:10px;
+  }
+
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
 }
 
-.navbar-custom .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    letter-spacing: .08em;
+  .s-la-navbrowse {
+  display:none;
+  }
+  .navbar-text {
+      display: none;
+  }
+
+  .navbar-default .navbar-brand{
+    font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
+    font-size:1.8em;
+    color:white;
+  }
+
+  .navbar-default .navbar-brand:focus, .navbar-default  a.navbar-brand:hover{
+    color:white;
+  }
+  nav .container-fluid{
+    padding-left:0;
+    padding-right:0;
+  }
+
+/*Fixing the navbar logo */
+@media only screen and (max-width: 450px){
+.navbar-header > a.navbar-brand {
+    font-size: 1.2em;
+}
+.navbar-header > img.logo-style{
+    height: 1em;
+}
 }
 
-.nav-link{
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-@media (max-width:800px) {
-.logo-style{
-margin-left:5px;
-}
-}
-
-.nav-item{
-margin-left:.2em;
-margin-right:.2em;
-text-transform:none;
-white-space:nowrap;
-font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
-}
-
-.navbar-default{
-	border-width:0px;
-	border-color: transparent;
-}
-
-.navbar-custom{
-background-color:rgba(30,30,30,0.88) !important;
-border-bottom: 5px solid #FFB900;
-}
-
-.navbar-default .navbar-nav>li>a {
-font-family: "GraphikRegular", Helvetica, Arial, sans-serif !important;
-}
-
-.s-la-navbrowse {
-display:none;
-}
-.navbar-text {
-    display: none;
-}
+  @media screen and (max-width: 1200px) {
+    nav a.navbar-brand{
+      position: absolute;
+      left: 2%;
+    }
+  }
 
 
 .s-la-color-bars {
@@ -227,12 +232,37 @@ border-width:0px;
 
 footer{
 	width:100%;
+  background-color: #ffce2e;
 	padding:25px;
 	line-height:1.6em;
 
 }
 
-.footer-links{
+footer li{
+  list-style: none;
+}
+
+footer  {
+  width:  100%;
+  padding:  25px;
+  line-height: 1.5em;
+  font-size:.8em;
+  background-color: #ffce2e;
+  color: #000;
+  margin-top:3em;
+}
+
+footer a{
+color:black;
+text-decoration: underline;
+}
+
+footer a:hover{
+text-decoration: none;
+color:black;
+}
+
+/* .footer-links{
 text-align:left;
 font-size:1.05rem !important;
 line-height:1.5em !important;
@@ -250,12 +280,7 @@ padding-left:0px;
 
 .footer-links li{
 display: block !important;}
-
-
-#navbar .navbar-right {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-}
+ */
 
 .hide {
    position: absolute !important;
@@ -275,11 +300,11 @@ display: block !important;}
 p a {
   color: #000000;
   padding: 2px;
-  border-bottom: 1px solid #0C77D4;
+  border-bottom: 1px solid black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #0C77D4;
-	box-shadow: inset 0 -1px 0 #0C77D4;
+    border-bottom-color: black;
+	box-shadow: inset 0 -1px 0 black;
 	text-decoration: none;
 }
 
@@ -297,20 +322,22 @@ h1#s-lg-guide-name {
 }
 
 .breadcrumb > li > a:hover {
-   color:#0c77d4;
+   color:black;
 }
 
 #s-lib-bc-list.breadcrumb {
-    font-size: 1.1em;
+    font-size: .8em;
     padding-top: 1em;
     font-family: "GraphikRegular", sans-serif;
-    text-transform: uppercase;
     font-weight:400;
+    text-decoration:underline;
 }
-
+#s-lib-bc-list.breadcrumb a{
+    color:black;
+}
 .s-lib-box-content > div > ul, ol{
-  font-size:1.3em;
-  margin: 1.125em 0;
+  font-size:.95em;
+  margin: 2em;
   line-height: 1.55em;
   letter-spacing: normal;
   font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
@@ -320,28 +347,28 @@ h1#s-lg-guide-name {
 .s-lib-box-content > div > ul > li a {
   color: #000000;
   padding: 2px;
-  border-bottom: 1px solid #0C77D4;
+  border-bottom: 1px solid black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #0C77D4;
-  box-shadow: inset 0 -1px 0 #0C77D4;
+    border-bottom-color: black;
+  box-shadow: inset 0 -1px 0 black;
   text-decoration: none;
 }
 
 .s-lib-box-content > div > ol > li a {
   color: #000000;
   padding: 2px;
-  border-bottom: 1px solid #0C77D4;
+  border-bottom: 1px solid black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #0C77D4;
-  box-shadow: inset 0 -1px 0 #0C77D4;
+    border-bottom-color: black;
+  box-shadow: inset 0 -1px 0 black;
   text-decoration: none;
 }
 
 .s-lib-box-content > div > ul > li a:hover {
   color: #FFFFFF;
-	background-color: #0C77D4;
+	background-color: black;
 	padding: 2px;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
     transition-property: background;
@@ -352,7 +379,7 @@ h1#s-lg-guide-name {
 
 .s-lib-box-content > div > ol > li a:hover {
   color: #FFFFFF;
-	background-color: #0C77D4;
+	background-color: black;
 	padding: 2px;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
     transition-property: background;
@@ -363,7 +390,7 @@ h1#s-lg-guide-name {
 
 p a:hover {
   color: #FFFFFF;
-	background-color: #0C77D4;
+	background-color: black;
 	padding: 2px;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
     transition-property: background;
@@ -423,12 +450,26 @@ color:black;
 background-color:white;
 }
 
+ul.nav.nav-pills.nav-stacked.split-button-nav {
+    border-left: 1px solid lightgray;
+}
+
+ul.nav.nav-pills.nav-stacked.split-button-nav li a{
+  text-decoration: underline;
+}
+
+ul.nav.nav-pills.nav-stacked.split-button-nav li a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+
    #s-lg-tabs-container .nav-tabs > li > a,
                         #s-lg-tabs-container .nav-tabs > li > button,
                         #s-lg-tabs-container .nav-pills > li > a,
                         #s-lg-tabs-container .nav-pills > li > button {
 
-border-top: 1px solid;
+border-top: 0;
 border-bottom: 0;
 border-right: 0;
 border-left: 0;
@@ -456,7 +497,7 @@ border-color:black;
                         #s-lg-tabs-container .nav-pills > li > a:hover,
                         #s-lg-tabs-container .nav-pills > li > button:hover {
 
-                    border-top: 1px solid #0C77D4;
+                    border-top: 0;
                     border-bottom: 0;
                     border-right: 0;
                     border-left: 0;
@@ -465,14 +506,14 @@ border-color:black;
                             -moz-border-radius: 0;
                             border-radius: 0;
                             background-color: transparent;
-                            color: #0C77D4;
+                            color: black;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > a,
                         #s-lg-tabs-container .nav-tabs > .active > button,
                         #s-lg-tabs-container .nav-pills > .active > a,
                         #s-lg-tabs-container .nav-pills > .active > button {
-                            color: #0C77D4;
-                            border-top: 1px solid #0C77D4;
+                            color: black;
+                            border-top: 0;
                             border-bottom: 0;
                             border-right: 0;
                             border-left: 0;
@@ -485,9 +526,9 @@ border-color:black;
                         }
                         #s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > a,
                         #s-lg-tabs-container .nav-tabs > .active > .s-lg-subtab-ul > .active > button {
-                            color: #0C77D4;
+                            color: black;
                             background-color:transparent;
-                            border-top: 1px solid #0C77D4;
+                            border-top: 0;
                             border-bottom: 0;
                             border-right: 0;
                             border-left: 0;
@@ -498,9 +539,9 @@ border-color:black;
                         #s-lg-tabs-container .nav-pills > .active > a:hover,
                         #s-lg-tabs-container .nav-tabs > .active > button:hover,
                         #s-lg-tabs-container .nav-pills > .active > button:hover {
-                            color: #0C77D4;
-                            border: 1px solid transparent;
-                            border-top: 1px solid #0C77D4;
+                            color: black;
+                            border: 0;
+                            border-top: 0;
                             border-bottom: 0;
                             border-right: 0;
                             border-left: 0;
@@ -589,7 +630,7 @@ display:none;
     font-weight: normal;
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
+.nav>li>a:hover {
     outline: none;
 }
 /*
@@ -611,291 +652,291 @@ Pratt Style
 /* ==========================================================================
    Typography
    ========================================================================== */
-pre {
-  font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
-  margin: 1.125em 0;
-  line-height: 1.55em;
-  font-size: 1.04em;
-  letter-spacing: normal;
-}
 
-blockquote {
-  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 1.5em 40px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-}
-
-h1 {
-  font-size: 2.75em;
-  line-height: 1.5em;
-  margin-top: 0.13636em;
-  margin-bottom: 0.13636em;
-  line-height: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
-@media (max-width: 47.938em) {
-  h1 {
-    font-size: 2.25em;
+  body{
+    font-size:1rem !important;
   }
-}
 
-/* h2 {
-  font-size: 1.1em;
-  line-height: 1.09091em;
-  margin-top: 0.13636em;
-  margin-bottom: 0.13636em;
-  line-height: 1.25em;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-} */
-@media (max-width: 47.938em) {
-  /* line 221, ../sass/_normalize.scss */
-  h2 {
-    font-size: 2.0625em;
+  .s-la-box-title h2 {
+      font-size: 1.2rem !important;
+      margin: 5px;
+      line-height: 1.7 !important;
   }
+
+  h1,  h2,  h3,  h4,  h5,  h6  {
+    font-family: 'GraphikRegular', Helvetica, Arial, sans-serif;
+    font-weight:  500;
+}
+p,  pre  {
+    font-family:  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
+    margin:  1.125em 0;
+    line-height:  1.7em;
+    font-size:  1.04em;
+    letter-spacing:  normal;
+}
+p a  {
+    color:  #000000;
+    padding:  2px;
+    border-bottom:  1px solid black;
+    border-bottom-width:  1px;
+    border-bottom-style:  solid;
+    border-bottom-color:  black;
+    box-shadow:  inset 0 -1px 0 black;
+    text-decoration:  none;
+}
+p a:hover  {
+    color:  white;
+    background-color: black;
+    padding:  2px;
+    transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
+    transition-property:  background;
+    transition-duration:  0.15s;
+    transition-timing-function:  cubic-bezier(0.33,  0.66,  0.66,  1);
+    transition-delay:  0s;
+}
+blockquote  {
+    margin:  1.5em 40px;
+}
+h1  {
+    font-size:  2.75em;
+    line-height:  1.5em;
+    margin-top:  0.13636em;
+    margin-bottom:  0.13636em;
+    line-height:  1em;
+    text-transform:  uppercase;
+    letter-spacing:  0.09em;
+}
+@media (max-width: 47.938em)  {
+    h1  {
+    font-size:  2.25em;
+}
+}
+h2  {
+    font-size:  1.98rem;
+    font-weight:  500;
+    line-height:  1.2;
+    color:  inherit;
+    margin-top:  0;
+    letter-spacing:  0.09em;
+
+}
+h3  {
+    font-size:  1.5em;
+    line-height:  1.5em;
+    margin-top:  0.15em;
+    margin-bottom:  0.15em;
+    line-height:  1.25em;
+    letter-spacing:  normal;
+}
+@media (max-width: 47.938em)  {
+    h3  {
+    font-size:  1.5em;
+}
+}
+h4  {
+    font-size:  1em;
+    line-height:  2em;
+    margin-top:  0.25em;
+    margin-bottom:  0.25em;
+    line-height:  1.25em;
+    letter-spacing:  0.09em;
+    text-transform:  uppercase;
+}
+@media (max-width: 47.938em)  {
+    h4  {
+    font-size:  1em;
+}
+}
+h5  {
+    font-size:  1.04em;
+    line-height:  1.2em;
+    margin-top:  0.12em;
+    margin-bottom:  0.12em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h5  {
+    font-size:  0.9375em;
+}
+}
+h6  {
+    font-size:  0.95em;
+    line-height:  1.57895em;
+    margin-top:  0.15789em;
+    margin-bottom:  0.15789em;
+    line-height:  1.25em;
+}
+@media (max-width: 47.938em)  {
+    h6  {
+    font-size:  0.7125em;
+}
+}
+abbr[title]  {
+    border-bottom:  1px dotted;
+}
+b,  strong  {
+    font-family:  "GraphikMedium",  "GraphikRegular",  Helvetica,  Arial,  sans-serif;
+}
+dfn  {
+    font-style:  italic;
+}
+hr  {
+    -webkit-box-sizing:  content-box;
+    -moz-box-sizing:  content-box;
+    box-sizing:  content-box;
+    background-color:  #8c8c8c;
+}
+mark  {
+    background:  #ff0;
+    color:  #000;
+}
+code,  kbd,  pre,  samp  {
+    font-family:  monospace,  serif;
+    _font-family:  'courier new',  monospace;
+    font-size:  1em;
+}
+pre  {
+    white-space:  pre;
+    white-space:  pre-wrap;
+    word-wrap:  break-word;
+}
+q  {
+    quotes:  "\201C" "\201D" "\2018" "\2019";
+}
+small  {
+    font-size:  80%;
+}
+sub,  sup  {
+    font-size:  75%;
+    line-height:  0;
+    position:  relative;
+    vertical-align:  baseline;
+}
+sup  {
+    top:  -0.5em;
+}
+sub  {
+    bottom:  -0.25em;
+}
+dl,  menu,  ol,  ul  {
+    margin:  1.3em 0;
+}
+dd  {
+    margin:  0 0 0 40px;
+}
+menu,  ol,  ul  {
+    padding:  0 0 0 40px;
+}
+nav ul,  nav ol  {
+    list-style:  none;
+    list-style-image:  none;
+}
+p  {
+    font-size:  1em;
+}
+a  {
+    color:  black;
+    -webkit-transition-property:  color;
+    -moz-transition-property:  color;
+    -o-transition-property:  color;
+    transition-property:  color;
+    -webkit-transition-duration:  0.2s;
+    -moz-transition-duration:  0.2s;
+    -o-transition-duration:  0.2s;
+    transition-duration:  0.2s;
+    word-wrap:  break-word;
+    font-size:  1em;
+    text-decoration:  none;
+    letter-spacing:  normal;
 }
 
-/* line 231, ../sass/_normalize.scss */
-h3 {
-  font-size: 2.25em;
-  line-height: 1.5em;
-  margin-top: 0.15em;
-  margin-bottom: 0.15em;
-  line-height: 1.25em;
-  letter-spacing: normal;
+a:focus, a:hover {
+    color: black;
 }
-@media (max-width: 47.938em) {
-  /* line 231, ../sass/_normalize.scss */
-  h3 {
-    font-size: 1.5em;
+
+  /* ==========================================================================
+     Lists
+     ========================================================================== */
+  /**
+   * Address margins set differently in IE 6/7.
+   */
+  /* line 398, ../sass/_normalize.scss */
+  dl,
+  menu,
+  ol,
+  ul {
+    margin: 0;
   }
+
+  ul > li > ul {
+    margin: 1em;
 }
 
-/* line 241, ../sass/_normalize.scss */
-h4 {
-  font-size: 1em;
-  line-height: 2em;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-  line-height: 1.25em;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-@media (max-width: 47.938em) {
-  /* line 241, ../sass/_normalize.scss */
-  h4 {
-    font-size: 1em;
+  /* line 412, ../sass/_normalize.scss */
+  dd {
+    margin: 0 0 0 40px;
   }
-}
 
-/* line 251, ../sass/_normalize.scss */
-h5 {
-  font-size: 1.04em;
-  line-height: 1.2em;
-  margin-top: 0.12em;
-  margin-bottom: 0.12em;
-  line-height: 1.25em;
-}
-@media (max-width: 47.938em) {
-  /* line 251, ../sass/_normalize.scss */
-  h5 {
-    font-size: 0.9375em;
+  /**
+   * Address paddings set differently in IE 6/7.
+   */
+  /* line 422, ../sass/_normalize.scss */
+  menu,
+  ol,
+  ul {
+    padding: 0 0 0 0px;
   }
-}
 
-/* line 261, ../sass/_normalize.scss */
-h6 {
-  font-size: 0.95em;
-  line-height: 1.57895em;
-  margin-top: 0.15789em;
-  margin-bottom: 0.15789em;
-  line-height: 1.25em;
-}
-@media (max-width: 47.938em) {
-  /* line 261, ../sass/_normalize.scss */
-  h6 {
-    font-size: 0.7125em;
+  /**
+   * Correct list images handled incorrectly in IE 7.
+   */
+  /* line 433, ../sass/_normalize.scss */
+  nav ul,
+  nav ol {
+    list-style: none;
+    list-style-image: none;
   }
-}
 
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 276, ../sass/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
+  p{
+  font-size:1em;
+  }
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 285, ../sass/_normalize.scss */
-b, strong {
-  font-family: "LyonBold", "GraphikRegular", Helvetica, Arial, sans-serif;
+  a {
+      color: black;
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.2s;
+      -moz-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      word-wrap: break-word;
+      font-size: 1em;
+      text-decoration: none;
+      letter-spacing: normal;
+  }
 
-}
+  #s-lc-public-pt {
+      margin: 10px 0;
+      margin-top:30px !important;
+      text-align:center !important;
+  }
 
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 293, ../sass/_normalize.scss */
-dfn {
-  font-style: italic;
-}
+  @media (max-width: 1170px){
+  .account-text {
+      display: none;
+  }
+  }
 
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 301, ../sass/_normalize.scss */
-hr {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  color:black;
-  background-color:black;
-
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 310, ../sass/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 322, ../sass/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 339, ../sass/_normalize.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/**
- * Set consistent quote types.
- */
-/* line 354, ../sass/_normalize.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 362, ../sass/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 371, ../sass/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 378, ../sass/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 382, ../sass/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
-   Lists
-   ========================================================================== */
-/**
- * Address margins set differently in IE 6/7.
- */
-/* line 398, ../sass/_normalize.scss */
-dl,
-menu,
-ol,
-ul {
-  /* margin: 1.3em 0; */
-}
-
-/* line 412, ../sass/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/**
- * Address paddings set differently in IE 6/7.
- */
-/* line 422, ../sass/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-/**
- * Correct list images handled incorrectly in IE 7.
- */
-/* line 433, ../sass/_normalize.scss */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-strong{
-font-size:1em;
-font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
-}
-p{
-font-size:1.3em;
-margin: 1.125em 0;
-line-height: 1.55em;
-letter-spacing: normal;
-font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
-}
-
-a {
-    color: #0C77D4;
-    -webkit-transition-property: color;
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    word-wrap: break-word;
-    font-size: 1em;
-    text-decoration: none;
-    letter-spacing: normal;
-}
+  .dropdown-menu>li>a {
+      color: black !important;
+    font-size: 1.3em
+  }
+  .dropdown-menu>li>a:hover {
+      color: white !important;
+      background-color: black !important;
+  }
 
 
 .btn{
@@ -905,18 +946,20 @@ a {
 
 .btn-spring{
   margin:2px;
-  border-width:1px;
-  border-color:black;
-  border-radius:0px;
-  background-color:white;
-  color: black;
-  font-family: "GraphikRegular", Helvetica, Arial, sans-serif;
+  background-color: black;
+    border-color: black;
+    color: white;
+    padding: 0.7em;
+    border-radius: 25px;
+    font-size: .9em;
 
 }
 
 .btn-spring:hover{
-  background-color:#0C77D4;
-  color: white;
+  background-color: #ffce2e;
+  border-color: #ffce2e;
+  color: black;
+  text-decoration: none;
 }
 
 p a.btn-spring {
@@ -938,18 +981,14 @@ p a.btn-spring {
     background-color: white;
     background-image: none;
     color: #000000;
-    border-bottom: 1px solid black;
     border-radius: 0;
 }
 
 /*fix heading spacing */
 .s-lib-box.s-lib-box-std h2.s-lib-box-title {
-    font-size: 1.9em;
-    padding-top: .8em;
-    padding-bottom: .8em;
+    font-size: 2em;
     line-height: 1.25em;
     letter-spacing: 0.09em;
-    text-transform: uppercase;
     font-weight: 500;
 }
 
@@ -999,7 +1038,7 @@ padding:15px;
 }
 .dropdown-menu>li>a:hover {
     color: white;
-    background-color: #0C77D4;
+    background-color: black;
 }
 
 #s-lib-scroll-top{
@@ -1007,26 +1046,26 @@ padding:15px;
 }
 
 .s-lg-label-more{
-color:#0C77D4;
+color:black;
 border-bottom:0px;
 box-shadow:none;
 }
 
 .s-lg-label-less{
-color:#0C77D4;
+color:black;
 border-bottom:0px;
 box-shadow:none;
 }
 
 .s-lg-label-less:hover{
-color:#0C77D4;
+color:black;
 background-color:white;
 border-bottom:0px;
 box-shadow:none;
 }
 
 .s-lg-label-moreinfo .s-lg-label-more:hover{
-color:#0C77D4;
+color:black;
 background-color:white;
 transition:none;
 border-bottom:0px;
@@ -1075,22 +1114,8 @@ color:#FFB900;
 .h5{
     font-size: 1.25rem;
 }
-/*Fixing the navbar logo */
-@media only screen and (max-width: 450px){
-.navbar-header > a.navbar-brand {
-    font-size: 1.2em;
-}
-.navbar-header > img.logo-style{
-    height: 1em;
-}
-}
 
-  @media screen and (max-width: 1200px) {
-    nav a.navbar-brand{
-      position: absolute;
-      left: 2%;
-    }
-  }
+
 
 /* CHANGING BREAKPOINT OF BOOTSTRAP 3 NAVIGATION BAR*/
 @media (max-width: 1200px) {
@@ -1181,7 +1206,7 @@ margin-top: 1rem;
 }
 
 .header-link:hover{
-      color: #0C77D4!important;
+      color: black!important;
       text-decoration:none !important;
 }
 
@@ -1208,7 +1233,7 @@ color:#212529; !important;
  letter-spacing: .09em !important;
 }
 h2.s-lg-blog-header  a:hover{
-color: #0C77D4!important;
+color: black!important;
 text-decoration:none !important;
 }
 
@@ -1311,7 +1336,7 @@ width:100%;
 }
 
 .pratt-btn:hover {
-    background-color: #0C77D4;
+    background-color: black;
     color: white;
     text-decoration: none;
 }
@@ -1328,7 +1353,7 @@ a.special-btn {
 }
 
 a.special-btn:hover{
-    background-color: #0C77D4 !important;
+    background-color: black !important;
     color: white !important;
     text-decoration: none;
 }
@@ -1357,15 +1382,14 @@ li > p {
 border:none;
 background-color:transparent;
 border-radius:0;
-border-top: solid 1px;
 font-family: "GraphikRegular", Helvetica, Arial, sans-serif !important;
     font-size: 1rem;
     font-weight: normal;
 }
 
 .s-lg-tabs-side .s-lg-boxnav .list-group-item:hover, .list-group-item a:hover  {
-  border-color:#0C77D4;
-  color:#0C77D4;
+  border-color:black;
+  color:black;
   text-decoration:none;
 }
 .list-group-item a {
