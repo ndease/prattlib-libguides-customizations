@@ -939,11 +939,6 @@ a:focus, a:hover {
   }
 
 
-.btn{
-	border-radius:0px;
-}
-
-
 .btn-spring{
   margin:2px;
   background-color: black;
@@ -1447,6 +1442,10 @@ margin:0;
 .h5.lib-site-alert {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#s-lg-az-search-bar nav.navbar .navbar-default{
+  background-color:transparent;
 }
 </style>
 
