@@ -1428,6 +1428,15 @@ margin:0;
   background-color:transparent;
   border:0;
 }
+
+.s-lg-az-result-title a {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.s-lg-az-result-title a:hover {
+    text-decoration: none;
+}
 </style>
 
 <script>
