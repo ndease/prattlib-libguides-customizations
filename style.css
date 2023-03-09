@@ -1450,6 +1450,10 @@ margin:0;
 .s-lg-az-result-title a:hover {
     text-decoration: none;
 }
+
+#s-lib-footer-support-link{
+    display:none;
+}
 </style>
 
 <script>
